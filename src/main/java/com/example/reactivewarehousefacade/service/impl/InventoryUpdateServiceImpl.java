@@ -25,6 +25,7 @@ public class InventoryUpdateServiceImpl implements InventoryUpdateService {
 
 
     private final InventoryControllerApiClient inventoryControllerApiClient;
+
     private final Sinks.Many<InventoryUpdatedItemResponse> inventoryItemUpdatedSink = Sinks.many().multicast().onBackpressureBuffer();
 
 

@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Reactive Warehouse Facade
+  profiles:
+    active: swagger
+
+logging:
+  level:
+    com.example: DEBUG
+    org.springframework.web: DEBUG
+    ROOT: INFO

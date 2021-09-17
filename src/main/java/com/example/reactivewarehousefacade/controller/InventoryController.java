@@ -37,7 +37,7 @@ public class InventoryController {
 
     @GetMapping(path = "/{warehouseId}/item/{itemId}")
     @ApiResponses({
-            @ApiResponse(code = 200, message = "Successfully updated inventory item."),
+            @ApiResponse(code = 200, message = "Successfully returned inventory item."),
             @ApiResponse(code = 400, message = "The received request is not syntactically valid. Correct the request and try again.")
     })
     public Mono<InventoryItemResponse> getWarehouseInventoryItem(@PathVariable @NotBlank final String warehouseId,

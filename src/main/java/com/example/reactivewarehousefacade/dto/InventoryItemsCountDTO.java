@@ -16,6 +16,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class InventoryItemsCountDTO implements Serializable {
 
+    private static final long serialVersionUID = 1268222230447063701L;
 
     @ApiModelProperty("The Warehouse Inventory Identifier.")
     private String warehouseId;

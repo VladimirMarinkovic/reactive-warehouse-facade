@@ -99,7 +99,7 @@ public class InventoryServiceImpl implements InventoryService {
 
     /**
      * Represents the method responsible to calculate number of pages based on inventoryItemsCount response and configured page size.
-     * @param inventoryItemsCount The Inventory`s items count ID for which to get all subscriptions offers.
+     * @param inventoryItemsCount The warehouse`s total inventory items.
      * @return The calculated number of pages.
      */
     private @NotNull Integer calculateTotalNumberOfPages(final InventoryItemsCountDTO inventoryItemsCount) {
